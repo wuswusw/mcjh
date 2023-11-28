@@ -1,0 +1,286 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ----------- 리셋 코드 ----------- */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 140px;
+    min-width: 1160px;
+
+    border-bottom: 1px solid #e3e3e3;
+}
+
+header > h1{
+    margin-right: 60px;
+}
+
+header > ul{
+    display: flex;
+    line-height: 139px;
+}
+
+header > ul > li{
+    color: #292929;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0px 10px;
+    margin: 0px 85px 0px 0px;
+
+    height: 140px;
+
+
+    cursor: pointer;
+}
+
+header > div{
+    display: flex;
+    gap: 4px;
+}
+
+header > div > p{
+    width: 80px;
+    height: 36px;
+    border-radius: 48px;
+    background-color: #db0007;
+    line-height: 36px;
+
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header > div > p:nth-child(2){
+    background-color: #d87e00;
+}
+
+header > div > p:nth-child(3){
+    background-color: #264a36;
+}
+
+
+.sh{
+    width: 36px;
+    height: 36px;
+    background-image: url(https://www.mcdonalds.co.kr/kor/images/common/ico_search.png);
+    margin-left: 26px;
+    border: none;
+    background-color: #fff;
+
+    cursor: pointer;
+}
+
+
+/* --------자바스크립트---------- */
+#javas{
+    height: 0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 2;
+    min-width: 1160px;
+
+}
+
+#javas > div{
+    display: flex;
+    gap: 38px;
+
+    color: #808080;
+    font-weight: bold;
+    line-height: 40px;
+
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+
+    width: 100%;
+    height: 0px; /**/
+
+
+    margin: 0 auto;
+    width: 820px;
+    left: 0;
+    right: 0;
+
+}
+
+#javas > div > div{
+    margin-top: 24px;
+
+}
+
+
+#javas > div > div:nth-child(3){
+    padding-left: 35px;
+}
+
+#javas > div > div:nth-child(4){
+    padding-left: 80px;
+}
+
+
+/*---------메인 스와이프----------*/
+
+main{
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: 540px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide>img {
+    display: block;
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+
+    position: relative;
+}
+
+
+/* --------메인-------- */
+
+
+main>div:nth-child(2) {
+    padding: 30px 0 60px 0;
+    width: 1162px;
+    margin: 0 auto;
+
+}
+
+div > h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0 0 60px 0;
+}
+
+
+#menugrid{
+    display: grid;
+    grid-template-columns: 366px 366px 366px;
+    grid-template-rows: 438px 438px;
+    gap: 32px;
+
+    justify-content: center;
+    
+
+}
+
+#menugrid > div{
+    border-radius: 10px;
+    box-shadow: 0 3px 4px rgba(0,0,0,.1);
+}
+
+#menugrid > div > img{
+    border-radius: 10px 10px 0 0;
+}
+
+.mnpt{
+    font-size: 18px;
+    color: #292929;
+    font-weight: bold;
+    line-height: 1.7;
+
+    padding: 24px 30px;
+}
+
+#mainbutton {
+    width: 90px;
+    height: 90px;
+    background-image: url(https://www.mcdonalds.co.kr/kor/images/common/btn_more.png);
+    background-repeat: no-repeat;
+
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+/* ------푸터------ */
+footer{
+    width: 100%;
+
+
+    background-color: #292929;
+}
+
+footer > div{
+    padding: 45px 0px 55px 0px;
+    width: 1162px;
+    margin: 0 auto;
+
+
+    display: flex;
+    gap: 72px;
+}
+
+#ftitle{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 27px;
+}
+
+#ftitle > li:first-child{
+    color: #ffff00;
+}
+
+#ftext{
+    color: #808080;
+    font-size: 14px;
+    line-height: 27px;
+}
